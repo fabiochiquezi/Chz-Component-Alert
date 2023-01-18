@@ -3,7 +3,7 @@
   "description": "Simple VanillaUI Component.",
   "repository": "https://github.com/fabiochiquezi/Chz-Component-PopSave",
   "keywords": ["alert", "vanilla-component" ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "rm -rf dist && tsc && cp ./src/styles.css .",
     "test": "jest --runInBand",

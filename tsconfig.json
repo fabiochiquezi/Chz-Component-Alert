@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "commonjs",                                /* Specify what module code is generated. */
-    // "rootDir": "./",                                  /* Specify the root folder within your source files. */
+    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
     // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
     // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
     "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
@@ -14,6 +14,6 @@
     "declaration": true,
     "declarationMap": true
   },
-  "includes": ["**/*.ts,"],
-  "exclude": ["**/*.test.ts"]
+  "includes": ["**/*.ts"],
+  "exclude": ["**/*.test.ts", "*.js", "setupTests.ts", "jest.config.ts"]
 }
