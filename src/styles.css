@@ -1,0 +1,76 @@
+.portals-alert-anim-in {
+  animation: AlertAnimIn 300ms ease-in-out;
+}
+@keyframes AlertAnimIn {
+  from {
+    left: 48%;
+    opacity: 0;
+  }
+  to {
+    left: 50%;
+    opacity: 1;
+  }
+}
+.portals-alert-anim-out {
+  animation: AlertAnimOut 300ms forwards;
+}
+@keyframes AlertAnimOut {
+  from {
+    left: 50%;
+    opacity: 1;
+  }
+  to {
+    left: 48%;
+    opacity: 0;
+  }
+}
+.Alert{
+  position: fixed;
+  left: 0px;
+  margin-left: 5%;
+  top: 120px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 5px;
+  padding: 16px 16px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+.Alert:hover {
+  opacity: 0.9;
+}
+.Alert:active {
+  transition: transform 100ms ease;
+  transform: scale(0.90);
+}
+@media (min-width: 540px) {
+  .Alert {
+    max-width: 420px;
+    left: 50%;
+    margin-left: -210px;
+  }
+}
+.Alert p{
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.Alert .close{
+  position: relative;
+  transition: all 200ms ease;
+  cursor: pointer;
+
+}
+.Alert .close:hover {
+  opacity: 0.5;
+}
+.Alert .close:active {
+  transition: transform 50ms ease;
+  transform: scale(0.95);
+}
