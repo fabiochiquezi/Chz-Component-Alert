@@ -10,7 +10,25 @@ Simple VanillaUI Component.
 ## 🚀 Getting Started
 
 ```
-implement
+const alert = useAlert()
+
+<!-- Methods -->
+alert.open(background: string,message: string,delay?: number)
+alert.success(message: string, delay?: number)
+alert.error(message: string, delay?: number)
+alert.close()
+
+<!-- Customize -->
+const options = {
+  id?: string,
+  className?: string,
+  animationRemove?: string,
+  animationAdd?: string,
+  animationDuration?: number
+  colorError?: string,
+  colorSuccess?: string
+}****
+const alert = useAlert(options)
 ```
 
 ### 📡 Installing
@@ -18,13 +36,19 @@ implement
 Component:
 
 ```
-implement
+yarn add @fabiochiquezi/alert
+
+import { usePopSave } from '@fabiochiquezi/alert'
+@import "@fabiochiquezi/alert/styles.css"
 ```
 
 Project:
 
 ```
-implement
+git clone https://github.com/fabiochiquezi/Chz-Component-Alert.git
+cd Chz-Component-Alert
+yarn install
+yarn dev
 ```
 
 ## ✋ Author
