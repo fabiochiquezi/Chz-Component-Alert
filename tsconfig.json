@@ -15,5 +15,5 @@
     "declarationMap": true
   },
   "includes": ["**/*.ts"],
-  "exclude": ["**/*.test.ts", "*.js", "setupTests.ts", "jest.config.ts"]
+  "exclude": ["**/*.test.ts", "*.js", "setupTests.ts", "jest.config.ts", "./dist"]
 }
