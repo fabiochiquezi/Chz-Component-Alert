@@ -1,9 +1,13 @@
 {
   "name": "@fabiochiquezi/alert",
   "description": "Simple VanillaUI Component.",
-  "repository": "https://github.com/fabiochiquezi/Chz-Component-PopSave",
-  "keywords": ["alert", "vanilla-component" ],
-  "version": "1.0.1",
+  "repository": "https://github.com/fabiochiquezi/Chz-Component-Alert",
+  "homepage": "https://www.chiquezi.com/vanilla/alert",
+  "keywords": [
+    "alert",
+    "vanilla-component"
+  ],
+  "version": "1.0.4",
   "scripts": {
     "build": "rm -rf dist && tsc && cp ./src/styles.css .",
     "test": "jest --runInBand",
