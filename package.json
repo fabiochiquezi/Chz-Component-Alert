@@ -7,7 +7,7 @@
     "alert",
     "vanilla-component"
   ],
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "build": "rm -rf dist && tsc && cp ./src/styles.css .",
     "test": "jest --runInBand",
