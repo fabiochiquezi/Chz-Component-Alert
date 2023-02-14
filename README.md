@@ -1,56 +1,30 @@
-<br />
-<p align="center">
-    <img src="https://www.chiquezi.com/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fpublic%2Flogo%2Flogo.c442afade084ba1adfa95e1aecfc83d0.svg&w=384&q=75" width="125">
-</p>
+# Alert
 
-# 🤙 Alert
+Simple Vanilla component that displays a message to the user.
+See more at the documentation in [chiquezi.com/vanilla/alert](https://www.chiquezi.com/vanilla/alert)
 
-Simple VanillaUI Component.
-
-## 🚀 Getting Started
+### Getting Started
 
 ```
+// Install
+yarn add @fabiochiquezi/alert or npm install @fabiochiquezi/alert
+
+// Usage
+import "@fabiochiquezi/alert/styles.css" // Import the CSS
+import { useAlert } from '@fabiochiquezi/alert'
+
 const alert = useAlert()
-
-<!-- Methods -->
-alert.open(background: string,message: string,delay?: number)
-alert.success(message: string, delay?: number)
-alert.error(message: string, delay?: number)
-alert.close()
-
-<!-- Customize -->
-const options = {
-  id?: string,
-  className?: string,
-  animationRemove?: string,
-  animationAdd?: string,
-  animationDuration?: number
-  colorError?: string,
-  colorSuccess?: string
-}****
-const alert = useAlert(options)
 ```
 
-### 📡 Installing
-
-Component:
+### Example
 
 ```
-yarn add @fabiochiquezi/alert
+import { useAlert } from '@fabiochiquezi/alert';
 
-import { usePopSave } from '@fabiochiquezi/alert'
-@import "@fabiochiquezi/alert/styles.css"
+const alert = useAlert()
+alert.success("Simple example!", 1000)
 ```
 
-Project:
-
-```
-git clone https://github.com/fabiochiquezi/Chz-Component-Alert.git
-cd Chz-Component-Alert
-yarn install
-yarn dev
-```
-
-## ✋ Author
+## Author
 
 - **Fábio Chiquezi** - [GitHub](https://github.com/fabiochiquezi) / [LinkedIn](https://www.linkedin.com/in/fabiochiquezi/)
